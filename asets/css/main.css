@@ -155,8 +155,25 @@
     font-size: 1.5em;
     
 }
-/*
 
+.show_img{
+    display: flex;
+    background-image: url(/asets/img/brg.jpg);
+    align-items: flex-end;
+    margin: 16px 0;
+}
+.picture{
+    width: calc(100%/5);
+    align-self: center;
+    background-color: rgba(138, 139, 139, 0.7); 
+    border-radius: 10px;
+    
+}
+.img{
+    width: calc(100%);
+    border-radius: 10px;
+}
+/*
 #feedback{
 
 }
