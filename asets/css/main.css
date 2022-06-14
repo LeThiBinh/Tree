@@ -1,0 +1,197 @@
+/*header*/
+#header{
+    width: 100%;
+    height: 50px;
+    background-image:linear-gradient(0,rgb(79, 157, 79),rgb(23, 87, 23)) ;
+    position: relative;
+    position: fixed;
+    top:0;
+    z-index: 100;
+
+}
+.headert{
+    display: flex;
+    justify-content: space-between;
+}
+.logo,.logo--img{
+    width: 50px;
+    height: 50px;
+}
+.home{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.0rem;
+    color: var(--white-color);
+    font-weight: 200;
+    line-height: 50px;
+}
+
+/* nav, slider*/
+#slider{
+    position: relative;
+    margin-top:50px ;
+    padding-top: 50%;
+    background: url(/asets/img/cay\ trong\ phong.jpg) top center/ cover no-repeat;
+    z-index: 50;
+   
+}
+
+.text{
+    position: absolute;
+    font-size: 3.0rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(173, 61, 138);  
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20%;  
+}
+.nav_title{
+    
+    background-color: rgba(99, 236, 248, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px ;
+    font-weight: bold; 
+    text-align: center;
+    position: relative;
+}
+.nav_a{
+    color: blue;
+    font-size: 2.0em; 
+    text-decoration: none; 
+    text-transform: uppercase;  
+}
+.nav_title:hover,.nav_a:hover,.nav_subnav a:hover {
+    color: #000;
+    background-color: aqua;
+}
+.nav_subnav{
+    display: none;
+    position: absolute;
+    background-color:rgba(99, 236, 248, 0.7);
+    list-style: none; 
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 120px;
+}
+.nav_subnav a{
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.6em;
+}
+.nav_title:hover .nav_subnav{
+    display:block;
+}
+/*use*/
+.use_all{
+    display: flex;
+    justify-content: space-around;
+}
+.about_use{
+    padding: 0 16px;
+    margin-top: 16px;
+}
+.about_use h3{
+    font-size: 2.5em;
+    color: rgb(164, 212, 41);
+    margin-bottom: 16px;
+}
+.about_use p{
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: bold; 
+    text-align: justify; 
+}
+.maintitle{
+    text-align: center;
+    color: black;
+    font-size: 3.0em;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+.maintitle_p{
+    text-align: center;
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+/*box*/
+.box_all{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+}
+.box__H,.box__M,.box__V{
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.box__H{
+    background-image:linear-gradient(0,rgb(209, 170, 142),rgb(164, 99, 52)) ; 
+}
+.box__M{
+    background-image:linear-gradient(0,rgb(224, 113, 193),rgb(166, 67, 138)) ;
+}
+.box__V{
+    background-image:linear-gradient(0,rgb(89, 243, 143),rgb(69, 159, 100)) ;
+}
+.box--title{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2.5em;
+}
+.box--ditail{
+    color: black;
+    font-size: 1.5em;
+    
+}
+/*
+
+#feedback{
+
+}
+#footer{
+
+}
+
+/*css aliy*/
+/*
+.aliy {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(45, 12, 78);
+    position: fixed;
+    top: 0;
+}
+.aliy-child {
+    width: 100%;
+    height: 30px;
+    display: block;
+    color: rgb(251, 249, 249);
+    background-color: #6495ED;
+    position: fixed;
+    bottom: 0px;
+}
+.aliy::before {
+    content: "SB-SHOP";
+    display: block;
+    color:rgb(249, 249, 253);
+    width:10% ;
+    height: 40px ;
+    box-sizing: content-box;
+    background-position: left 0;
+    background-color: rgb(248, 24, 24);
+}
+
+
+*/
