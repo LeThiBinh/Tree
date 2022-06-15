@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asets/css/base.css">
     <link rel="stylesheet" href="asets/css/main.css">
     <link rel="stylesheet" href="asets/fonts/fontawesome/fontawesome-free-6.1.1-web/css/all.min.css">
@@ -35,11 +35,11 @@
             </div>
             <div class="nav">
                 <div class="nav_title">
-                    <a class="nav_a" href="">Danh Mục</a>
+                    <a class="nav_a">Danh Mục</a>
                     <ul class="nav_subnav">
-                        <li><a href="">Lợi ích</a></li>
-                        <li><a href="">Các loại cây</a></li>
-                        <li><a href="">Đánh giá</a></li>
+                        <li><a href="#use">Lợi ích</a></li>
+                        <li><a href="#box">Các loại cây</a></li>
+                        <li><a href="#feedback">Đánh giá</a></li>
                     </ul>
                 </div>
                 <div class="nav_title">
@@ -80,7 +80,7 @@
             </div>
         </div>
     
-        <div class="box">
+        <div id="box">
             <h2 class="maintitle">Các loại hoa, cây cảnh</h2>
             <p class="maintitle_p">Dưới đây là một phân loại với những ý nghĩa riêng bạn có thêm cho mình lựa chọn tốt khi mua hoặc trông cây cảnh</p>
             <div class="box_all">
@@ -118,22 +118,63 @@
         </div>
         
         <div id="feedback">
-            <h2>Xin chào các bạn!</h2> 
-            <p>Tên bạn là gì</p>
-            <input type="text">
-            <p>Giớ tính của bạn là gì</p>
-            <ul>
-                <li >Nam</li> <input name="gender" type="checkbox">
-                <li>Nữ</li><input name="gender" type="checkbox">
-                <li>Giớ Tính Khác</li><input name="gender" type="checkbox">
-            </ul>
-            <button style="color:red">Đăng Ký</button>
-        
+            <h2 class="maintitle">Đánh giá</h2> 
+            <p class="maintitle_p">Bạn có thể cho tôi biết trải nghiệm của bạn sau khi đọc bài viết</p>
+            <h3 style="font-size: 2.0em;color: rgb(33, 167, 53);" >Xin chào bạn! Cảm ơn bạn đã đọc bài viết.</h3>
+            <div class="fb_all">
+                <div class="feedback_check">
+                    <p>Tên của bạn là gì</p>
+                    <input type="text" class="name">
+                </div>
+                <div class="feedback_check">
+                    <p>bài viết có hữu ích với bạn</p>
+                    <ul>
+                        <li>Rất Tốt</li> <input class="gender" type="radio">
+                        <li>Bình Thường</li><input class="gender" type="radio">
+                        <li>Rất Tệ</li><input class="gender" type="radio">
+                    </ul>
+                    <p>Bạn muốn trồng một chậu hoa (cây cảnh) chứ</p>
+                    <ul>
+                        <li>Đương Nhiên Rồi</li><input class="gender_2" type="radio">
+                        <li>Tôi Sẽ Xem Xét</li><input class="gender_2" type="radio">
+                        <li>Không</li><input class="gender_2" type="radio">
+                    </ul>
+                </div>
+                <div class="feedback_check">
+                    <p>Bạn có góp ý nào để cải thiện trang web</p>
+                    <input type="text" class="chat">
+                </div>
+                
+                <div class="click">
+                    <label for="in" class="click submit">Submit</label>
+                    <input type="checkbox" id="in">
+                    <div class="click show">
+                        <div class="click show_box">
+                            <div class="box_content">
+                                <h2 class="thank">Cảm ơn bạn</h2>
+                                <label for="in" class="content_close"><i class="fa-solid fa-xmark"></i></label>
+                            </div>
+                            <div class="box_body">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <hr>
+                            <p class="msg">Chúc bạn một ngày tốt lành</p>
+                        </div>
+                    </div>
+                </div>   
+                
+            </div> 
         </div>
     </div>
 
     <div id="footer">
-
+        <div class="socials">
+            <a href="https://github.com/LeThiBinh"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <h3>Số điện thoại : 039*******</h3>
     </div>
 
 </body>
