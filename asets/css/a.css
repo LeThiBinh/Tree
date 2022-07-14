@@ -1,0 +1,49 @@
+#header{
+    width: 100%;
+    height: 50px;
+    background-image:linear-gradient(0,rgb(79, 157, 79),rgb(23, 87, 23)) ;
+    position: relative;
+    position: fixed;
+    top:0;
+    z-index: 100;
+}
+.headert{
+    display: flex;
+    justify-content: space-between;
+}
+.logo,.logo--img{
+    width: 50px;
+    height: 50px;
+}
+.home{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.0rem;
+    color: var(--white-color);
+    font-weight: 200;
+    line-height: 50px;
+}
+#content{
+    background-color: blue;
+    margin-top: 50px;  
+    display: flex; 
+    font-size: 1.5em;      
+}
+.menu{
+    background-color: rgb(0, 255, 0);
+    flex: 1;         
+}
+.menu_title{
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+.content{
+    background-color: rgb(255, 0, 149);
+    height:50% ;   
+    flex: 3;           
+}
+.menu_title li a {
+    text-decoration: none;
+}
